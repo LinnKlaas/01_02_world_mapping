@@ -72,11 +72,9 @@ function generateInvader (width, height, xPosition, yPosition) {
         let h = 350;
         let s = Math.floor(Math.random() * 100);
         let v = Math.floor(Math.random() * 100);
-        //writeCharacterToConsole('◼️',x,y)
         writeCharacterToConsole(chalk.hsv(h,s,v)('■'), x + xPosition, y + yPosition);
-        //writeCharacterToConsole('◼️',2 * width - x,y)
         writeCharacterToConsole(chalk.hsv(h,s,v)('■'), 2 * width - x + xPosition, y + yPosition);
-
+        
       }
     }
   }
